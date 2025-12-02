@@ -1163,7 +1163,7 @@ async function previewOptimize() {
 async function downloadImagesFolder() {
   logEl.textContent = ''
   const rawName = folderInput.value?.trim() || 'images'
-  const folderName = toKebab(rawName) || 'images'
+  const folderName = 'promo-images'
   const imgs = Array.from(editor.querySelectorAll('img'))
   if (!imgs.length) return log('Немає <img> у редакторі.')
 
